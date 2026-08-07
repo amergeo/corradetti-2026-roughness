@@ -1,0 +1,23 @@
+# MATLAB
+*.asv
+*.m~
+*.mat
+slprj/
+*.autosave
+
+# Run outputs (data, not code)
+Run_*.xyz
+Run_noise_*.xyz
+*_square.txt
+*_results*.txt
+*_allmean*.txt
+*_progmean*.txt
+*_userbounded_progmean*.txt
+*_dispersion_*.txt
+*_resultsinterp.txt
+selfaffine_runs_log.csv
+FFT_Results_Direct.mat
+
+# OS
+.DS_Store
+Thumbs.db
