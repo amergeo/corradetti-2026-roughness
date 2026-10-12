@@ -2,7 +2,9 @@
 
 MATLAB pipeline for PSD-based fault surface roughness characterization — Hurst exponent (H) and spectral pre-factor (alpha) — supporting:
 
-> Corradetti, A., Romanelli, F., Cremonesi, A., Bonini, L., Agosta, F. "Beyond the Hurst Exponent: The Role of the Spectral Pre-factor in Fault Roughness Characterisation and Its Synthetic Validation" (under review).
+> Corradetti, A., Romanelli, F., Cremonesi, A., Bonini, L., Agosta, F. "Beyond the Hurst Exponent: The Role of the Spectral Pre-factor in Fault Roughness Characterization and Its Synthetic Validation". Journal of Structural Geology, 105837. https://doi.org/10.1016/j.jsg.2026.105837
+
+The results in the paper were produced with release v1.0.0.
 
 ## Overview
 
@@ -33,7 +35,7 @@ Both paths converge on the same PSD fitting routines (three variants: allmean, p
 
 ### Spectral fitting variants
 Applied independently along X (perpendicular to slip) and Y (parallel to slip):
-- `XFit_all_data.m` / `YFit_all_data.m` — regression on all raw spectral estimates (**allmean**).
+- `XFit_all_data.m` / `YFit_all_data.m` — regression on the mean of all raw spectral estimates at each frequency (**allmean**).
 - `XFit_progre_mean.m` / `YFit_progre_mean.m` — geometric-progression binning before regression (**progmean**, following Candela et al. 2012).
 - `XFit_userbounded_progmean.m` / `YFit_userbounded_progmean.m` — same binning restricted to a user-defined frequency window (**userbounded progmean**).
 - `freqRangeGUI.m` — GUI helper for selecting the frequency window used by the userbounded variants.
@@ -56,7 +58,7 @@ MATLAB with:
 
 ## Citation
 
-If you use this code, please cite the associated manuscript (citation and Zenodo DOI to be added upon publication).
+If you use this code, please cite the associated manuscript.
 
 ## License
 
